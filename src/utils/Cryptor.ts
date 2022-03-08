@@ -79,7 +79,7 @@ class Cryptor {
   }
 
   static b64encode(decoded) {
-    return CryptoJS.enc.Utf8.stringify(CryptoJS.enc.Utf8.parse(decoded));
+    return CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse(decoded));
   }
 
   static b64decode(encoded) {
